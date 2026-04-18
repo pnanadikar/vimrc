@@ -56,8 +56,9 @@ let g:ctrlp_working_path_mode = 0
 let g:ctrlp_map = '<C-f>'
 map <leader>j :CtrlP<cr>
 
+" PDN Apr 12, 2026 added a b as single b causes problems with other maps beginning with b
 " Quickly find and open a buffer
-map <leader>b :CtrlPBuffer<cr>
+map <leader>bb :CtrlPBuffer<cr>
 
 let g:ctrlp_max_height = 20
 let g:ctrlp_custom_ignore = 'node_modules\|^\.DS_Store\|^\.git\|^\.coffee'
@@ -129,7 +130,7 @@ let g:lightline = {
       \ 'active': {
       \   'left': [ ['mode', 'paste'],
       \             ['fugitive', 'readonly', 'filename', 'modified'] ],
-      \   'right': [ [ 'lineinfo' ], ['percent'] ]
+      \   'right': [ [ 'lineinfo' ], ['percent'], ['fileformat', 'fileencoding', 'filetype'] ]
       \ },
       \ 'component': {
       \   'readonly': '%{&filetype=="help"?"":&readonly?"🔒":""}',

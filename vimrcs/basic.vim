@@ -43,7 +43,10 @@ au FocusGained,BufEnter * silent! checktime
 
 " With a map leader it's possible to do extra key combinations
 " like <leader>w saves the current file
+"
 let mapleader = ","
+" PN modifiction 6-Mar-2025
+set timeoutlen=500 " Set timeout length to 500 ms
 
 " Fast saving
 nmap <leader>w :w!<cr>
@@ -205,7 +208,7 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<CR>?<C-R>=@/<CR><CR>
 
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-" => Moving around, tabs, windows and buffers
+" => Moving around, tabs, windows and buffers 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Map <Space> to / (search) and Ctrl-<Space> to ? (backwards search)
 map <space> /
