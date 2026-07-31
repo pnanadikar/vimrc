@@ -10,6 +10,9 @@ set foldmethod=marker
 set nowrap
 set showcmd
 set norelativenumber!
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" Format a json document using jq
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 nnoremap <leader>F :%!jq<CR>
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => Ack searching and cope displaying
